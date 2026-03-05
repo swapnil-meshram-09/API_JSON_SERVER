@@ -1,24 +1,35 @@
 {
-    "users":[
-        {
-            "name":"name1",
-            "age":21
-        },
-        {
-            "name":"name2",
-            "age":22
-        },
-        {
-            "name":"name3",
-            "age":23
-        },
-        {
-            "name":"name4",
-            "age":24
-        },
-        {
-            "name":"name5",
-            "age":25
-        }
-    ]
+  "users": [
+    {
+      "name": "name1",
+      "age": 21,
+      "id": "403e"
+    },
+    {
+      "name": "name2",
+      "age": 22,
+      "id": "6a43"
+    },
+    {
+      "name": "name3",
+      "age": 23,
+      "id": "61b1"
+    },
+    {
+      "name": "name4",
+      "age": 24,
+      "id": "7f9e"
+    },
+    {
+      "name": "name5",
+      "age": 25,
+      "id": "ee6e"
+    },
+    {
+      "id": "72a8",
+      "name": "name6",
+      "age": "30"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
