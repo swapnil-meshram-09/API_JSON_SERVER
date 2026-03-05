@@ -9,7 +9,9 @@ export default function Post(){
     async function Posting(e){
         e.preventDefault()
         try{
-
+            const response = await axios.post('',
+                { name, age }
+            )
         } catch(error){
             console.log(error.message); 
         }
