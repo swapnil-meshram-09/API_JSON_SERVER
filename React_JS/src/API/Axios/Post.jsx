@@ -14,6 +14,10 @@ export default function Post(){
             )
             const data = response.data
             console.log(data);
+
+            setId('')
+            setName('')
+            setAge('')
             
         } catch(error){
             console.log(error.message); 
