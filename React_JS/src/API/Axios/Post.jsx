@@ -16,9 +16,9 @@ export default function Post(){
     return(
         <>
         <form action="" >
-            <input type="text" placeholder='enter id' value={id}/><br /><br />
-            <input type="text" placeholder='enter name' value={name}/><br /><br />
-            <input type="text" placeholder='enter age' value={age}/><br /><br />
+            <input type="text" placeholder='enter id' value={id} onChange={(e)=>setId(e.target.value)}/><br /><br />
+            <input type="text" placeholder='enter name' value={name} onChange={(e)=>setName(e.target.value)}/><br /><br />
+            <input type="text" placeholder='enter age' value={age} onChange={(e)=>{setAge}(e.target.value)}/><br /><br />
             <button>Click</button>
         </form>
         </>
