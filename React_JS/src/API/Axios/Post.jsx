@@ -16,9 +16,9 @@ export default function Post(){
     return(
         <>
         <form action="" >
-            <input type="text" placeholder='enter id'/><br /><br />
-            <input type="text" placeholder='enter name'/><br /><br />
-            <input type="text" placeholder='enter age'/><br /><br />
+            <input type="text" placeholder='enter id' value={id}/><br /><br />
+            <input type="text" placeholder='enter name' value={name}/><br /><br />
+            <input type="text" placeholder='enter age' value={age}/><br /><br />
             <button>Click</button>
         </form>
         </>
