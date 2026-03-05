@@ -9,9 +9,12 @@ export default function Post(){
     async function Posting(e){
         e.preventDefault()
         try{
-            const response = await axios.post('',
+            const response = await axios.post('http://localhost:3000/users',
                 { name, age }
             )
+            const data = response.data
+            console.log(data);
+            
         } catch(error){
             console.log(error.message); 
         }
