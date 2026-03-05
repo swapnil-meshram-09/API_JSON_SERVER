@@ -6,7 +6,7 @@ export default function Post(){
     const [name, setName] = useState('')
     const [age, setAge] = useState('')
 
-    async function Posting(e){
+    async function posting(e){
         e.preventDefault()
         try{
             const response = await axios.post('http://localhost:3000/users',
