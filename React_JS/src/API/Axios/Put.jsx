@@ -24,7 +24,6 @@ export default function Put(){
             setName('')
             setAge('')
             
-
         } catch(error){
             console.log(error.message);
         }
