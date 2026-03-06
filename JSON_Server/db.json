@@ -36,9 +36,8 @@
       "age": "30"
     },
     {
-      "id": "7185",
-      "name": "name7",
-      "age": "123"
+      "age": "22",
+      "id": "7185"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
