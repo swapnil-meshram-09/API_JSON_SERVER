@@ -14,6 +14,8 @@ export default function Put(){
                 console.log('User not found.');
             }
 
+            const userId = response.data[0].id
+
         } catch(error){
             console.log(error.message);
         }
