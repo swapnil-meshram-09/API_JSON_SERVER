@@ -8,12 +8,16 @@ export default function Put(){
     const putting = async(e) =>{
         e.preventDefault()
         try{
+            const response = await axios.get(`http://localhost:3000/users?name=${name}`)
 
-        } catch(){
-            
+            if(response.data.length === 0){
+                console.log('User not found.');
+            }
+
+        } catch(error){
+            console.log(error.message);
         }
     }
-
     return(
         <>
         <form action="" onSubmit={putting}>
