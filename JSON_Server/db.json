@@ -29,6 +29,16 @@
       "id": "72a8",
       "name": "name6",
       "age": "30"
+    },
+    {
+      "id": "e7e2",
+      "name": "name5",
+      "age": "30"
+    },
+    {
+      "id": "7185",
+      "name": "name7",
+      "age": "123"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
