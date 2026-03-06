@@ -16,6 +16,11 @@ export default function Put(){
 
             const userId = response.data[0].id
 
+            const dataChange = await axios.put(`http://localhost:3000/users/${userId}`,
+                { age }
+            )
+            
+
         } catch(error){
             console.log(error.message);
         }
