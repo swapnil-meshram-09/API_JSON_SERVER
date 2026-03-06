@@ -20,6 +20,9 @@ export default function Put(){
                 { age }
             )
             console.log(dataChange.data);
+
+            setName('')
+            setAge('')
             
 
         } catch(error){
