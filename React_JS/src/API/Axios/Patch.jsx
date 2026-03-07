@@ -6,7 +6,7 @@ export default function Patch(){
         e.preventDefault()
 
         try{
-            const response = await axios.get(``)
+            const response = await axios.get(`http://localhost:3000/users?name=${}`)
 
         } catch(error){
             console.log(error.message);
