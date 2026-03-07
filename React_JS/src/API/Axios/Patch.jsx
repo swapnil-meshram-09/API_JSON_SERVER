@@ -20,6 +20,11 @@ export default function Patch(){
             const dataUpdate = await axios.patch(`http://localhost:3000/users/${userId}`,
                 { age }
             )
+            console.log(dataUpdate.data);
+
+            setName('')
+            setAge('')
+            
         } catch(error){
             console.log(error.message);
         }
