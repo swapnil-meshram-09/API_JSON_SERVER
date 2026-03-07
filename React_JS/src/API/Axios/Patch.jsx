@@ -25,8 +25,8 @@ export default function Patch(){
     return(
         <>
         <form action="" onSubmit={patching}>
-            <input type="text" /><br /><br />
-            <input type="text" /><br /><br />
+            <input type="text" placeholder='enter name' value={} onChange={}/><br /><br />
+            <input type="text" placeholder='enter age' value={} onChange={}/><br /><br />
             <button>Click</button>
         </form>
         </>
