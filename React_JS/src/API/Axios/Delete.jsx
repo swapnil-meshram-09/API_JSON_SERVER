@@ -16,7 +16,7 @@ export default function Delete(){
           const userId = response.data[0].id
 
           const dataDelete = await axios.delete(`http://localhost:3000/users/${userId}`)
-          console.log(dataDelete);
+          console.log(dataDelete.data);
 
           setName('')
 
