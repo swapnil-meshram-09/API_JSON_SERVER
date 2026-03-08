@@ -7,6 +7,11 @@ export default function Delete(){
     const deleting = async(e) =>{
         e.preventDefault()
 
+        try{
+
+        } catch(error){
+            console.log(error.message);
+        }
     }
     return(
         <>
