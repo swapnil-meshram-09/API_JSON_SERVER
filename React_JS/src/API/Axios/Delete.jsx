@@ -7,6 +7,8 @@ export default function Delete(){
     const deleting = async(e) =>{
         e.preventDefault()
 
+        const response = await axios.get(`http://localhost:3000/users?name=${name}`)
+
         try{
 
         } catch(error){
