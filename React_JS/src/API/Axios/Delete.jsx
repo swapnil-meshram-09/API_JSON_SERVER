@@ -7,10 +7,12 @@ export default function Delete(){
     const deleting = async(e) =>{
         e.preventDefault()
 
-        const response = await axios.get(`http://localhost:3000/users?name=${name}`)
-
         try{
+          const response = await axios.get(`http://localhost:3000/users?name=${name}`)
 
+          if(response.data.length === 0){
+              console.log('User not found');
+        }
         } catch(error){
             console.log(error.message);
         }
