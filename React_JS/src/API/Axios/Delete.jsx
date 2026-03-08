@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useState } from 'useState'
+import { useState } from 'react'
 
 export default function Delete(){
     const [name, setName] = useState('')
