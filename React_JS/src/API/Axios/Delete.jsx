@@ -12,7 +12,13 @@ export default function Delete(){
 
           if(response.data.length === 0){
               console.log('User not found');
-        }
+            }
+          const userId = response.data[0].id
+
+          const dataDelete = await axios.delete(`http://localhost:3000/users`)
+
+          console.log(dataDelete);
+          
         } catch(error){
             console.log(error.message);
         }
