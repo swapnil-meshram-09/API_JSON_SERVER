@@ -1,21 +1,21 @@
 import axios from 'axios'
-import { use, useState } from 'react'
+import { useState } from 'react'
 
 export default function Patch(){
     const [name, setName] = useState('')
     const [age, setAge] = useState('')
 
-    const pathcing = async(e)=>{
+    const patching = async(e)=>{
         e.preventDefault()
 
         try{
-            const response = await axios.get(`http://localhost:3000/users?name=${}`)
+            const response = await axios.get(`http://localhost:3000/users?name=${name}`)
 
             if(response.data.length === 0){
                 console.log('User not found');
             }
 
-            const userId = response.data[0].userId
+            const userId = response.data[0].id
 
             const dataUpdate = await axios.patch(`http://localhost:3000/users/${userId}`,
                 { age }
