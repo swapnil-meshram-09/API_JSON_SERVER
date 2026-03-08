@@ -5,8 +5,7 @@ export default function Delete(){
     return(
         <>
         <form action="">
-            <input type="text" /><br /><br />
-            <input type="text" /><br /><br />
+            <input type="text" placeholder='enter name' value={} onChange={(e)=>e.target.value}/><br /><br />
             <button>Click</button>
         </form>
         </>
